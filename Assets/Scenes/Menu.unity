@@ -813,6 +813,7 @@ GameObject:
   - component: {fileID: 902559197}
   - component: {fileID: 902559196}
   - component: {fileID: 902559195}
+  - component: {fileID: 902559198}
   m_Layer: 5
   m_Name: Button Start (2)
   m_TagString: Untagged
@@ -885,9 +886,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45896635}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: ToggleEffects
+      - m_Target: {fileID: 902559198}
+        m_TargetAssemblyTypeName: ToggleMusic, Assembly-CSharp
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -935,6 +936,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902559193}
   m_CullTransparentMesh: 1
+--- !u!114 &902559198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902559193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3909e6505f42ade43962d207fd1362ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleMusic: 0
+  toggleEffects: 1
 --- !u!1 &910868197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1733,7 @@ GameObject:
   - component: {fileID: 1299330175}
   - component: {fileID: 1299330174}
   - component: {fileID: 1299330173}
+  - component: {fileID: 1299330176}
   m_Layer: 5
   m_Name: Button Start (1)
   m_TagString: Untagged
@@ -1790,9 +1806,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 45896635}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: ToggleMusic
+      - m_Target: {fileID: 1299330176}
+        m_TargetAssemblyTypeName: ToggleMusic, Assembly-CSharp
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1840,6 +1856,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299330171}
   m_CullTransparentMesh: 1
+--- !u!114 &1299330176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299330171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3909e6505f42ade43962d207fd1362ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleMusic: 1
+  toggleEffects: 0
 --- !u!1 &1554777613
 GameObject:
   m_ObjectHideFlags: 0
