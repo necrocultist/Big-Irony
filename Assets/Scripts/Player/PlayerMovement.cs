@@ -52,11 +52,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (!doubleJumpMode)
         {
-            if (OnGroundCheck() && jumpTimer > Time.time) Jump();
+            if (isPlayerGrounded && jumpTimer > Time.time) Jump();
         }
         else
         {
-            if (OnGroundCheck())
+            if (isPlayerGrounded)
             {
                 canDoubleJump = true;
             }
